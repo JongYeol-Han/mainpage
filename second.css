@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.header {
+  height: 10%;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0.2%;
+}
+.header .head .navbar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.header .nav_menu {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  right: 1%;
+  width: 100%;
+}
+.header .nav_menu .item {
+  list-style: none;
+  padding: 1em 1em;
+}
+.header .nav_menu > li a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 33px;
+}
+.header .nav_menu .sub_menu_list .sub_menu > a {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+}
+.header .navbar .nav_menu > li:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+.header .navbar .nav_menu a:hover {
+  color: gray;
+}
+/*------------------resume----------------------*/
+.resume_title {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: entire 2s;
+}
+@keyframes entire {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.resume_title .resume_info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 10%;
+  width: 100%;
+}
+.resume_title .resume_info img {
+  width: 12%;
+  height: 24%;
+  border-radius: 50%;
+}
+.resume_title .resume_info h2 {
+  margin-top: 1%;
+  opacity: 0.8;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.resume_title .resume_info h1 {
+  opacity: 0.8;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.resume_title .resume_entire {
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  text-align: center;
+  bottom: 5%;
+}
+.resume_title .resume_entire .profile_info {
+  width: 100%;
+  height: 100%;
+}
+.resume_title .profile_info span {
+  font-size: 0.9rem;
+}
+.resume_title .profile_info .id {
+  display: inline-block;
+  margin-top: 1%;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.resume_title .education_info {
+  width: 100%;
+  height: 100%;
+}
+.resume_title .education_info span {
+  display: inline-block;
+  margin-top: 1%;
+  font-size: 0.9rem;
+}
+.resume_title .education_info .graduate {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.resume_title .software_skill_info {
+  width: 100%;
+  height: 100%;
+}
+.resume_title .software_skill_info .skills {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+div[data-rate] {
+  padding-right: 2%;
+}
+
+.resume_title .software_skill_info span {
+  display: inline-block;
+  margin-top: 1%;
+  font-size: 0.9rem;
+}
+
+.resume_title .software_skill_info .color {
+  text-align: right;
+  line-height: 0.9rem;
+  height: 0.9rem;
+  border-radius: 20px;
+  color: white;
+  font-weight: 200;
+  margin-left: 10%;
+}
+
+.resume_title .software_skill_info .blue {
+  width: 80%;
+  background-color: steelblue;
+  animation: max 3s;
+}
+
+.resume_title .software_skill_info .orange {
+  width: 70%;
+  background-color: #ff700a;
+  animation: maxi 3s;
+}
+
+.resume_title .software_skill_info .red {
+  width: 60%;
+  background-color: #ff5630;
+  animation: load 3s;
+}
+
+.resume_title .software_skill_info .grey {
+  width: 60%;
+  background-color: #0091ff;
+  animation: load 3s;
+}
+@keyframes load {
+  from {
+    width: 0%;
+    color: transparent;
+  }
+  to {
+    width: 60%;
+    color: white;
+  }
+}
+@keyframes max {
+  from {
+    width: 0;
+    color: transparent;
+  }
+  to {
+    width: 80%;
+    color: white;
+  }
+}
+@keyframes maxi {
+  from {
+    width: 0;
+    color: transparent;
+  }
+  to {
+    width: 70%;
+    color: white;
+  }
+}
+.resume_title .license_info {
+  width: 100%;
+  height: 100%;
+}
+.resume_title .license_info span {
+  display: inline-block;
+  margin-top: 1%;
+  font-size: 0.9rem;
+}
+
+.resume_title .license_info .licenses {
+  font-size: 1.1rem;
+  font-weight: 600;
+}

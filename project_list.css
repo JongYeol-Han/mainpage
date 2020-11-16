@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/*-------------첫 번째 섹션----------------------*/
+.header {
+  height: 10%;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0.2%;
+}
+.header .head .navbar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.header .nav_menu {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  right: 1%;
+  width: 100%;
+}
+.header .nav_menu .item {
+  list-style: none;
+  padding: 1em 1em;
+}
+.header .nav_menu > li a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 33px;
+}
+.header .nav_menu .sub_menu_list .sub_menu > a {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+}
+.header .navbar .nav_menu > li:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+.header .navbar .nav_menu a:hover {
+  color: gray;
+}
+/*-----------------두 번째 섹션------------------*/
+.project_list {
+  width: 100%;
+  height: 100%;
+  animation: list 2s;
+}
+@keyframes list {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.project_list .project_entire {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.project_list .project_entire div {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  width: 20%;
+  height: 48%;
+}
+.project_list .project_entire img {
+  width: 100%;
+  height: 100%;
+}
+
+.project_list .project_entire a {
+  opacity: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+.project_list .project_entire .A:hover {
+  opacity: 1;
+}
+.project_list .project_entire span {
+  position: absolute;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

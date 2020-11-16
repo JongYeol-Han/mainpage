@@ -1,0 +1,334 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/*-------------첫 번째 섹션----------------------*/
+.header {
+  height: 10%;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0.2%;
+}
+.header .head .navbar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.header .nav_menu {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  right: 1%;
+  width: 100%;
+}
+.header .nav_menu .item {
+  list-style: none;
+  padding: 1em 1em;
+}
+.header .nav_menu > li a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 33px;
+}
+.header .nav_menu .sub_menu_list .sub_menu > a {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+}
+.header .navbar .nav_menu > li:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+.header .navbar .nav_menu a:hover {
+  color: gray;
+}
+/*--------------두 번째 섹션---------------------*/
+.project_btf {
+  height: 100%;
+  width: 100%;
+  background: url(이거네.png) center center no-repeat;
+}
+.project_btf .h_entire {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  color: white;
+  margin-left: 5%;
+}
+.project_btf .h_entire .h_title h1 {
+  position: absolute;
+  font-size: 2rem;
+  animation: light 1.5s infinite ease-in;
+}
+.project_btf .h_entire .h_sub2 h3 {
+  position: absolute;
+  top: 52%;
+}
+
+.project_btf .h_entire .h_info p {
+  width: 20%;
+  font-size: 0.8rem;
+  text-align: justify;
+}
+@keyframes light {
+  0% {
+    text-shadow: 0 0 10px white;
+  }
+  50% {
+    text-shadow: 0 0 20px #e8f3ff;
+  }
+  100% {
+    text-shadow: 0 0 10px white;
+  }
+}
+/*---------------세 번째 섹션----------------------*/
+.project_btf1 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: url(1st.jpg) center center no-repeat;
+}
+.project_btf1 .btn_right {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+}
+.project_btf1 .btn_left {
+  position: absolute;
+  left: -100%;
+  top: 50%;
+  transition: all 0.25s;
+}
+
+.project_btf1 .btn_right button,
+.project_btf1 .btn_left button {
+  background-color: transparent;
+  font-size: 3.5rem;
+  border: none;
+  cursor: pointer;
+  outline-style: none;
+  opacity: 0.5;
+  animation: btnlight 0.7s infinite linear alternate;
+}
+.project_btf1 .btn_right i,
+.project_btf1 .btn_left i {
+  color: white;
+}
+.project_btf1 .btn_left button:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+.project_btf1 .btn_right button:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+@keyframes btnlight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.project_btf1 .h_1st_place {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-around;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-left: 5%;
+  width: 29.3%;
+  height: 100%;
+  left: -100%;
+  transition: all 0.4s;
+}
+.project_btf1 .h_1st_place .h_1st_info h2 {
+  position: absolute;
+  border-bottom: 1px solid white;
+  font-size: 2rem;
+}
+.project_btf1 .h_1st_place .h_1st_sub1 h3 {
+  position: absolute;
+  top: 65%;
+}
+.project_btf1 .h_1st_place .h_1st_sub2 p {
+  width: 79%;
+  font-size: 0.8rem;
+  text-align: justify;
+}
+/*----------------------네 번째 섹션---------------*/
+.project_btf2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(2sd.jpg) center center no-repeat;
+  overflow: hidden;
+}
+.project_btf2 .h_2sd_place {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-around;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-left: 5%;
+  width: 29.3%;
+  height: 100%;
+  left: 65%;
+  margin: auto;
+  transition: all 0.2s;
+}
+.project_btf2 .h_2sd_place .h_2sd_info h2 {
+  position: absolute;
+  border-bottom: 1px solid white;
+  font-size: 2rem;
+}
+.project_btf2 .h_2sd_place .h_2sd_sub1 h3 {
+  position: absolute;
+  top: 68%;
+}
+.project_btf2 .h_2sd_place .h_2sd_sub2 p {
+  width: 79%;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+.project_btf2 .btn_right2 {
+  position: absolute;
+  right: -100%;
+  top: 50%;
+  transition: all 0.25s;
+}
+.project_btf2 .btn_left2 {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+}
+
+.project_btf2 .btn_right2 button,
+.project_btf2 .btn_left2 button {
+  background-color: transparent;
+  font-size: 3.5rem;
+  border: none;
+  outline-style: none;
+  cursor: pointer;
+  opacity: 0.5;
+  animation: btnlight2 0.7s infinite linear alternate;
+}
+.project_btf2 .btn_right2 i,
+.project_btf2 .btn_left2 i {
+  color: white;
+}
+.project_btf2 .btn_left2 button:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+.project_btf2 .btn_right2 button:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+@keyframes btnlight2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*------------------다섯 번째 섹션-----------------*/
+.project_btf3 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: url(3th.jpg) center center no-repeat;
+}
+.project_btf3 .btn_right3 {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+}
+.project_btf3 .btn_left3 {
+  position: absolute;
+  left: -100%;
+  top: 50%;
+  transition: all 0.25s;
+}
+
+.project_btf3 .btn_right3 button,
+.project_btf3 .btn_left3 button {
+  background-color: transparent;
+  font-size: 3.5rem;
+  border: none;
+  cursor: pointer;
+  outline-style: none;
+  opacity: 0.5;
+  animation: btnlight 0.7s infinite linear alternate;
+}
+.project_btf3 .btn_right3 i,
+.project_btf3 .btn_left3 i {
+  color: white;
+}
+.project_btf3 .btn_left button:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+.project_btf3 .btn_right button:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+@keyframes btnlight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.project_btf3 .h_3th_place {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-around;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-left: 5%;
+  width: 29.3%;
+  height: 100%;
+  left: -100%;
+  transition: all 0.4s;
+}
+.project_btf3 .h_3th_place .h_3th_info h2 {
+  position: absolute;
+  border-bottom: 1px solid white;
+  font-size: 2rem;
+}
+.project_btf3 .h_3th_place .h_3th_sub1 h3 {
+  position: absolute;
+  top: 65%;
+}
+.project_btf3 .h_3th_place .h_3th_sub2 p {
+  width: 79%;
+  font-size: 0.8rem;
+  text-align: justify;
+}
+.invisible {
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+.visible {
+  opacity: 1;
+  transition: opacity 1.5s;
+}
